@@ -1,0 +1,37 @@
+GET http://localhost:4004/sap/odata/API_SALES_ORDER/OrderSet
+
+###
+POST  http://localhost:4004/sap/odata/API_SALES_ORDER/OrderSet
+Content-Type: application/json
+
+ {
+    "orderid" : 5557,
+    "customername" : "ABC1",
+    "contactperson" : "efwe",
+    "grossamount" : 555,
+    "currency" : "USD"
+  }
+
+###
+POST  http://localhost:4004/sap/odata/API_SALES_ORDER/OrderSet/$batch
+Content-Type: application/json
+
+{
+
+{
+  "orderid" : 85656,
+  "customername" : "ABC1",
+  "contactperson" : "efwe",
+  "grossamount" : 555,
+  "currency" : "USD"
+},
+{
+  "orderid" : 9562,
+  "customername" : "ABC1",
+  "contactperson" : "efwe",
+  "grossamount" : 555,
+  "currency" : "USD"
+}
+  
+}
+

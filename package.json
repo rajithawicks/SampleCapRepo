@@ -1,0 +1,54 @@
+{
+  "name": "AAA",
+  "version": "1.0.0",
+  "description": "A simple CAP project.",
+  "repository": "<Add your repository here>",
+  "license": "UNLICENSED",
+  "private": true,
+  "dependencies": {
+    "@sap/cds": "^6",
+    "express": "^4"
+  },
+  "devDependencies": {
+    "@sap/eslint-plugin-ui5-jsdocs": "^2.0.5",
+    "@sap/ux-specification": "^1.108.6",
+    "@sapui5/ts-types": "^1.92.2",
+    "eslint": "^7.32.0",
+    "sqlite3": "^5"
+  },
+  "scripts": {
+    "start": "cds-serve",
+    "watch-salesordermanagement": "cds watch --open salesordermanagement/webapp/index.html?sap-ui-xx-viewCache=false",
+    "watch-salseorder": "cds watch --open salseorder/webapp/index.html?sap-ui-xx-viewCache=false",
+    "watch-overviewlayout": "cds watch --open overviewlayout/webapp/index.html?sap-ui-xx-viewCache=false",
+    "watch-formedit": "cds watch --open formedit/webapp/index.html?sap-ui-xx-viewCache=false",
+    "watch-worklist": "cds watch --open worklist/webapp/index.html?sap-ui-xx-viewCache=false",
+    "watch-custpageflexiprog": "cds watch --open custpageflexiprog/webapp/index.html?sap-ui-xx-viewCache=false",
+    "watch-freestyle": "cds watch --open freestyle/webapp/index.html?sap-ui-xx-viewCache=false",
+    "watch-freestyleapp123": "cds watch --open freestyleapp123/webapp/index.html?sap-ui-xx-viewCache=false",
+    "watch-listreport": "cds watch --open listreport/webapp/index.html?sap-ui-xx-viewCache=false",
+    "watch-formentryobject": "cds watch --open formentryobject/webapp/index.html?sap-ui-xx-viewCache=false"
+  },
+  "cds": {
+    "requires": {
+      "db": {
+        "kind": "sqlite",
+        "credentials": {
+          "database": "db.sqlite"
+        }
+      }
+    }
+  },
+  "sapux": [
+    "app/salesordermanagement",
+    "app/salseorder",
+    "app/overviewlayout",
+    "app/formedit",
+    "app/worklist",
+    "app/custpageflexiprog",
+    "app/freestyleapp123",
+    "app/freestyle",
+    "app/listreport",
+    "app/formentryobject"
+  ]
+}
